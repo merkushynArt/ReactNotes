@@ -1,0 +1,27 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.wrapper__1 {
+   font-size: 30px;
+   color: #fff;
+   padding: 10px 20px;
+   background: rgb(122, 1, 122);
+   text-align: center;
+}
+
+.input {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.wrapper__1 input {
+   margin-left: 10px;
+   height: 40px;
+   font-size: 20px;
+   color: #fff;
+   background: rgb(128, 89, 128);
+}
