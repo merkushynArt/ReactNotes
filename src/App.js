@@ -9,6 +9,34 @@ function App() {
    const [password, setPassword] = useState('');
    const [isShow, setIsShow] = useState(false);
 
+   const posts = [
+      {
+         id: 1,
+         title: 'Заголовок',
+         shortDescription: 'Коротке описання посту'
+      },
+      {
+         id: 2,
+         title: 'Заголовок',
+         shortDescription: 'Коротке описання посту'
+      },
+      {
+         id: 3,
+         title: 'Заголовок',
+         shortDescription: 'Коротке описання посту'
+      },
+      {
+         id: 4,
+         title: 'Заголовок',
+         shortDescription: 'Коротке описання посту'
+      },
+      {
+         id: 5,
+         title: 'Заголовок',
+         shortDescription: 'Коротке описання посту'
+      }
+   ]
+
    return (
       <div className="App">
          <div className="wrapper__1">
@@ -47,6 +75,19 @@ function App() {
                <button type='button' onClick={() => setIsShow(false)}>закрити</button>
             </div>
             )}
+         </div>
+
+         <div className="wrapper__5">
+            <div className="container">
+               <div className='wrapper__5-posts'>
+                  {posts.map((post) => (
+                     <div className='wrapper__5-post' key={post.id.toString()}>
+                        <h3>{post.title + ' ' + post.id}</h3>
+                        <p>{post.shortDescription}</p>
+                     </div>
+                  ))}
+               </div>
+            </div>
          </div>
       </div>
    );

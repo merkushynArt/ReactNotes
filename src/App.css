@@ -4,6 +4,11 @@
    box-sizing: border-box;
 }
 
+.container {
+   max-width: 1024px;
+   margin: 0 auto;
+}
+
 .wrapper__1 {
    font-size: 30px;
    color: #fff;
@@ -69,4 +74,20 @@
    margin: 0 5px;
    color: #fff;
    background: #7a017a;
+}
+
+.wrapper__5 {
+   padding: 10px 20px;
+   color: #fff;
+   background: #7a017a;
+}
+
+.wrapper__5-post {
+   padding: 10px;
+   border: 1px solid #fff;
+}
+
+.wrapper__5-posts {
+   display: flex;
+   justify-content: space-between;
 }
